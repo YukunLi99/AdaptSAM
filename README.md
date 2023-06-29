@@ -12,18 +12,18 @@ To train a model with `tools/lazyconfig_train_net.py`, first prepare the dataset
 [datasets/README.md](https://github.com/facebookresearch/detectron2/tree/b2948fb7abe0604db8b9ec25898871e656d0b210/datasets) and then run, for single-node (8-GPUs) NVIDIA-based training:
 
 ```bash
-(node0)$ ./tools/lazyconfig_train_net.py --config-file configs/finetune/finetune_lora_sam_coco.py --num-gpus 8 
+(node0)$ python ./tools/lazyconfig_train_net.py --config-file configs/finetune/finetune_lora_sam_coco.py --num-gpus 8 
 ```
 
 To evaluate a trained SAM model's performance, run on single node
 
 ```
-(node0)$ ./tools/lazyconfig_train_net.py --config-file configs/finetune/finetune_lora_sam_coco.py --num-gpus 8 --eval-only --init-from /path/to/checkpoint
+(node0)$ python ./tools/lazyconfig_train_net.py --config-file configs/finetune/finetune_lora_sam_coco.py --num-gpus 8 --eval-only --init-from /path/to/checkpoint
 ```
 
 To evaluate a original SAM model's performance, run on single node
 ```
-(node0)$ ./tools/lazyconfig_train_net.py --config-file configs/eval/eval_sam_coco.py --num-gpus 8 --eval-only
+(node0)$ python ./tools/lazyconfig_train_net.py --config-file configs/eval/eval_sam_coco.py --num-gpus 8 --eval-only
 ```
 
 ## Installation
