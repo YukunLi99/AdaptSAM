@@ -40,12 +40,12 @@ Dataset preparation for AdaptSAM follows [Detectron2](https://github.com/faceboo
 
 ## Results
 
-| method   | datasets | $AP_{100}$ | $AR_{100}$ | $AR_{s}$ | $AR_{m}$ | $AR_{l}$ |
-| -------- | -------- | ---------- | ---------- | -------- | -------- | -------- |
-| SAM      | voc      | 1.3        | 34         | 33.8     | 28.4     | 37.5     |
-| AdaptSAM |          | 5.8        | 52         | 22.6     | 38.1     | 65.8     |
-| SAM      | coco     | 1.8        | 32.7       | 23.5     | 37.8     | 41.8     |
-| AdaptSAM |          | 10.2       | 49.7       | 28.4     | 59.5     | 73.2     |
+| method        | datasets | $AP_{100}$ | $AR_{100}$ | $AR_{s}$ | $AR_{m}$ | $AR_{l}$ |
+| ------------- | -------- | ---------- | ---------- | -------- | -------- | -------- |
+| SAM-Base      | voc      | 1.3        | 34         | 33.8     | 28.4     | 37.5     |
+| AdaptSAM-Base | voc      | 5.8        | 52         | 22.6     | 38.1     | 65.8     |
+| SAM-Huge      | coco     | 1.8        | 32.7       | 23.5     | 37.8     | 41.8     |
+| AdaptSAM-Huge | coco     | 10.2       | 49.7       | 28.4     | 59.5     | 73.2     |
 
 ## Acknowledgement
 
