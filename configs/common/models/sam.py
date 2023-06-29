@@ -19,10 +19,10 @@ image_embedding_size = image_size // vit_patch_size
 
 
 #vit_base
-encoder_embed_dim=768
-encoder_depth=12
-encoder_num_heads=12
-encoder_global_attn_indexes=[2, 5, 8, 11]
+# encoder_embed_dim=768
+# encoder_depth=12
+# encoder_num_heads=12
+# encoder_global_attn_indexes=[2, 5, 8, 11]
 
 #vit large
 # encoder_embed_dim=1024
@@ -31,10 +31,10 @@ encoder_global_attn_indexes=[2, 5, 8, 11]
 # encoder_global_attn_indexes=[5, 11, 17, 23]
 
 #vit huge
-# encoder_embed_dim=1280
-# encoder_depth=32
-# encoder_num_heads=16
-# encoder_global_attn_indexes=[7, 15, 23, 31]
+encoder_embed_dim=1280
+encoder_depth=32
+encoder_num_heads=16
+encoder_global_attn_indexes=[7, 15, 23, 31]
 
 model = L(Sam)(
         image_encoder=L(ImageEncoderViT)(

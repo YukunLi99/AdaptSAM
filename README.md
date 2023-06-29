@@ -1,4 +1,4 @@
-# Adapt SAM: adapt segment anything model based on detectron2
+# AdaptSAM: Adapt Segment Anything Model Based on Detectron2
 
 AdaptSAM is a library built on top of [Detectron2](https://github.com/facebookresearch/detectron2) that allows adapting the Segment-Anything Model (SAM) for custom COCO-format datasets. It supports point prompt training and leverages LORA technology for customizable adaptations of [SAM](https://github.com/luca-medeiros/lang-segment-anything).
 
@@ -23,7 +23,7 @@ To evaluate a trained SAM model's performance, run on single node
 
 To evaluate a original SAM model's performance, run on single node
 ```
-(node0)$ python ./tools/lazyconfig_train_net.py --config-file configs/eval/eval_sam_coco.py --num-gpus 8 --eval-only
+(node0)$ python ./tools/lazyconfig_train_net.py --config-file configs/eval/eval_sam_coco.py --num-gpus 4 --eval-only
 ```
 
 ## Installation
