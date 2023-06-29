@@ -28,7 +28,7 @@ To evaluate a original SAM model's performance, run on single node
 
 ## Installation
 
-Our environment requirements are consistent with ODISE, for installation, please refer to [ODISE](GitHub - NVlabs/ODISE: Official PyTorch implementation of ODISE: Open-Vocabulary Panoptic Segmentati)
+Our environment requirements are consistent with ODISE, for installation, please refer to [ODISE](https://github.com/NVlabs/ODISE)
 
 ## Features
 - Compatible with all features of Detectron2 framework
@@ -49,7 +49,7 @@ Dataset preparation for AdaptSAM follows [Detectron2](https://github.com/faceboo
 
 ## Acknowledgement
 
-Code is largely based on [Detectron2](https://github.com/facebookresearch/detectron2), [SAM](https://github.com/luca-medeiros/lang-segment-anything), [Mask2Former](https://github.com/facebookresearch/Mask2Former), [ODISE](GitHub - NVlabs/ODISE: Official PyTorch implementation of ODISE: Open-Vocabulary Panoptic Segmentati)
+Code is largely based on [Detectron2](https://github.com/facebookresearch/detectron2), [SAM](https://github.com/luca-medeiros/lang-segment-anything), [Mask2Former](https://github.com/facebookresearch/Mask2Former), [ODISE](https://github.com/NVlabs/ODISE)
 
 ## License
 

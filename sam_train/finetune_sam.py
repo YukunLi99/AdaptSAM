@@ -80,7 +80,7 @@ class Sam(nn.Module):
         topk_candidates_test: int = 100,
         score_thresh_test: float =  0.05,
 
-        size_divisibility: int = 32
+        size_divisibility: int = 1024, # 32
 
     ) -> None:
         """

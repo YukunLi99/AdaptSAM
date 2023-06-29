@@ -2,7 +2,7 @@ from detectron2.config import LazyCall as L
 # from detectron2.solver import WarmupParamScheduler
 from fvcore.common.param_scheduler import MultiStepParamScheduler
 
-from ..common.models.debug_lora_sam import model
+from ..common.models.lora_sam import model
 from ..common.data.coco import dataloader
 from ..common.train_d2 import train
 from ..common.optim_d2 import AdamW as optimizer
@@ -14,6 +14,7 @@ from sam_train.evaluation.coco.AgnosticCOCOEval import AgnosticCOCOEvaluator
 train.max_iter = 10000  #1×
 train.checkpointer.period = 500
 train.init_checkpoint = "weight/sam_vit_h_4b8939.pth"
+train.eval_period = 10
 
 train.amp.enabled = False  #使用 FP-16
 train.output_dir = 'output_lora_coco'

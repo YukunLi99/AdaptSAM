@@ -13,11 +13,11 @@ in the config file and implement a new train_net.py to handle them.
 import logging
 
 import os
-os.environ["DETECTRON2_DATASETS"] = "/data/sda/lyk/datasets/"
+os.environ["DETECTRON2_DATASETS"] = "datasets/"
 
 # from detectron2.checkpoint import DetectionCheckpointer
 import sys
-sys.path.append('/data/sda/lyk/code/finetune_sam/')
+sys.path.append('/home/AdaptSAM') # please change this to your own path
 from sam_train.checkpoint.sam_checkpointer import DetectionCheckpointer
 from detectron2.config import LazyConfig, instantiate
 from detectron2.engine import (
