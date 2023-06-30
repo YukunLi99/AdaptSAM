@@ -38,6 +38,15 @@ Our environment requirements are consistent with ODISE, for installation, please
 ## Prepare Datasets
 Dataset preparation for AdaptSAM follows [Detectron2](https://github.com/facebookresearch/detectron2/blob/main/datasets/README.md) and [Mask2Former](https://github.com/facebookresearch/Mask2Former/blob/main/datasets/README.md). 
 
+For Pascal VOC Instance Segmentation, run the following command to generate coco-format json file (refer to [voc2coco](https://github.com/yukkyo/voc2coco)):
+```
+$ python voc2coco.py \
+    --ann_dir /path/to/annotation/dir \
+    --ann_ids /path/to/annotations/ids/list.txt \
+    --labels /path/to/labels.txt \
+    --output /path/to/output.json \
+```
+
 ## Results
 
 | method        | datasets | $AP_{100}$ | $AR_{100}$ | $AR_{s}$ | $AR_{m}$ | $AR_{l}$ |
