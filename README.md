@@ -30,6 +30,32 @@ To evaluate a original SAM model's performance, run on single node
 
 Our environment requirements are consistent with ODISE, for installation, please refer to [ODISE](https://github.com/NVlabs/ODISE)
 
+Install dependencies by running:
+```
+conda create -n adaptsam python=3.9
+conda activate adaptsam
+conda install pytorch=1.13.1 torchvision=0.14.1 pytorch-cuda=11.6 -c pytorch -c nvidia
+conda install -c "nvidia/label/cuda-11.6.1" libcusolver-dev
+pip install -U opencv-python
+
+# under your working directory
+git clone https://github.com/facebookresearch/detectron2.git
+cd detectron2
+pip install -e .
+pip install git+https://github.com/cocodataset/panopticapi.git
+pip install git+https://github.com/mcordts/cityscapesScripts.git
+
+cd ..
+git clone https://github.com/facebookresearch/Mask2Former.git
+cd Mask2Former
+pip install -r requirements.txt
+
+cd ..
+git clone git@github.com:YukunLi99/AdaptSAM.git
+cd AdaptSAM
+pip install -e .
+```
+
 ## Features
 - Compatible with all features of Detectron2 framework
 - Supports custom COCO-format datasets
