@@ -46,11 +46,6 @@ pip install git+https://github.com/cocodataset/panopticapi.git
 pip install git+https://github.com/mcordts/cityscapesScripts.git
 
 cd ..
-git clone https://github.com/facebookresearch/Mask2Former.git
-cd Mask2Former
-pip install -r requirements.txt
-
-cd ..
 git clone git@github.com:YukunLi99/AdaptSAM.git
 cd AdaptSAM
 pip install -e .
